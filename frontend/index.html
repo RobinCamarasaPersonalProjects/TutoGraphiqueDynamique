@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1.0">
+  <title>Tuto Graphique Dynamique</title>
+  <link rel="stylesheet"
+  href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+  <script type="text/javascript"
+  src="js/plotlyjs-bundle.js"></script>
+  <div class="container">
+  <div id="app">
+    <div class="row align-items-center">
+      <div class="col-md-1"></div>
+        <div class="col-12 col-md-10">
+          <button type="button" class="btn btn-primary"
+          v-on:click="load_sin">Sinus</button>
+          <button type="button" class="btn btn-primary"
+          v-on:click="load_cos">Cosinus</button>
+          <button type="button" class="btn btn-primary"
+          v-on:click="load_tan">Tangente</button>
+        </div>
+        <div id="graphic" class="plotly-graph-div"
+        style="width: 100%; height: 30em;"></div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </div>
+  <script src="node_modules/jquery/dist/jquery.js">
+  </script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js">
+  </script>
+  <script src="node_modules/axios/dist/axios.js">
+  </script>
+  <script src="node_modules/vue/dist/vue.js"></script>
+  <script src="js/app.js">
+  </script>
+</body>
+</html>
